@@ -1,0 +1,234 @@
+/* CSS reset */
+body, h1, h2, h5, p, ol, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: "Roboto", sans-serif; 
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Header styling */
+#header {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  background: linear-gradient(to top right, rgba(120, 40, 200, 1), rgba(200, 134, 246, 1)) !important;
+  color: whitesmoke;
+  width: 100%;
+  height: 20vh;
+}
+
+/* Header media */
+.index-logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  outline: 2px solid whitesmoke;
+  cursor: pointer;
+  margin-right: 100px;
+  background: #F3CE5E;
+}
+
+.index-logo:hover img {
+  box-shadow: 0 0 15px #ffee10;
+  transform: scale(1.1);  
+}
+
+/* Header text */
+#header h1 {
+  margin: 0 1rem;
+}
+
+#header h2 {
+  text-align: left;
+}
+
+/* Header effects */
+#header h1:hover {
+  color: #ffee10;
+  cursor: pointer;
+}
+
+/* Main content container */
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column */
+  gap: 20px;  /* Gap between items */
+}
+
+/* Inner content container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main heading */
+.content-container h1 {
+  padding-top: 1rem;
+  text-align: center;
+  color: #555251;
+}
+
+/* Paragraphs in content */
+.content-container p {
+  color: #555251;
+  padding: 20px 50px;
+  line-height: 1.5;
+}
+
+/* Headings in content */
+.content-container h1,
+.content-container h2,
+.content-container h5 {
+  color: #555251;
+  padding: 1rem; /* Padding around headings */
+  text-align: center;
+}
+
+/* Section styles */
+.profile,
+.strengths,
+.certifications,
+.awards {
+  width: 100%;
+  padding: 2rem 0; /*Padding op and bottom*/
+}
+
+/* Background and text color for profile and certifications sections */
+.profile,
+.certifications {
+  background: #F5F0FF;
+  color: #333333;
+}
+
+/* Background and text color for strengths and awards sections */
+.strengths,
+.awards {
+  background: none;
+  color: #333333;
+}
+
+/* Containers for items within sections */
+.strengths-container,
+.certifications-container,
+.awards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Individual items within sections */
+.strength-item,
+.certification-item,
+.award-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  max-width: 400px; /* Adjust strength paragraphs*/
+  text-align: center;
+}
+
+/* Consistent image styling */
+.strength-item img,
+.certification-item img,
+.award-item img {
+  object-fit: contain;
+}
+
+/* Strength item image */
+.strength-item img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+
+/*Strength item effects*/
+.strength-item {
+  box-shadow: 0 0 15px #ffee10;
+  border-radius: 50%;
+}
+
+.strength-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Core strengths images */
+.ProblemSolving,
+.TechnicalKnowledge,
+.CrossFunctional,
+.Operations,
+.Roadmap {
+  width: 100px;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* Certification images */
+.Prince2,
+.Prince2Agile,
+.SAFe {
+  width: 250px;
+  height: auto; /* Maintain aspect ratio */
+  margin: 1rem 0; /* Top and bottom */
+}
+
+/* Award item images */
+.award-item img {
+  width: 350px;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* Hover effect for certification and award images */
+.certification-item:hover img {
+  transform: scale(2);
+}
+
+.award-item:hover img {
+  transform: scale(1.5);
+}
+
+/* Footer styles */
+#footer {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: flex-end; /* Send to end of baseline */
+  font-size: 10px;
+  padding: 0 20px; /* Horizontal padding */
+  background: linear-gradient(to top right, rgba(120, 40, 200, 1), rgba(200, 134, 246, 1)) !important;
+  color: whitesmoke; 
+  width: 100%;
+  height: 10vh;
+}
+
+/* Footer item styles */
+.footer-item {
+  display: flex;
+  align-items: flex-end; /* Send to end of baseline */
+}
+
+/* Footer item images */
+.footer-item img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  margin: 100px 30px 0 10px;
+}
+
+/* Footer item effects */
+.footer-item:hover img {
+  transform: scale(1.1);
+}
+
+
